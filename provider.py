@@ -15,3 +15,6 @@ class provider:
 
     def SHA256(self, data):
         return hashlib.sha256(data.encode()).hexdigest().upper()
+
+    def CONCAT_WS(self, joiner, *data):
+        return joiner.join(data)
