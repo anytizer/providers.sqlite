@@ -11,7 +11,7 @@ class provider:
         return str(uuid.uuid4()).upper()
 
     def NOW(self):
-        return datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
+        return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     def SHA256(self, data):
         return hashlib.sha256(data.encode()).hexdigest().upper()
